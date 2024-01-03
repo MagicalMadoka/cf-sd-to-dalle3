@@ -51,7 +51,7 @@ npm run deploy
 
 ## 使用
 
-假如你的worker被分配的路由是`cf-sd-to-dalle3.madokax.workers.dev`
+登陆到控制台，看一下你刚才部署的worker的路由是什么。假如你的worker被分配的路由是`cf-sd-to-dalle3.madokax.workers.dev`
 
 ### curl
 
