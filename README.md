@@ -9,26 +9,25 @@
 
 1. 克隆本项目
 
-	  ```bash
-		git clone https://github.com/MagicalMadoka/cf-sd-to-dalle3.git
+```bash
+git clone https://github.com/MagicalMadoka/cf-sd-to-dalle3.git
 
-		cd cf-sd-to-dalle3
-		```
+cd cf-sd-to-dalle3
+```
 
-2. 安装依赖
-	 你需要保证你拥有nodejs的环境，然后执行
+2. 安装依赖（你需要保证你拥有nodejs的环境，然后执行）
 
-	  ```bash
-		npm install
-		```
+```bash
+npm install
+```
 
 3. 部署到cloudflare
 
-	  ```bash
-		npm run deploy
-		```
+```bash
+npm run deploy
+```
 
-	 如果是第一次部署他会自动打开浏览器，让你授权。
+如果是第一次部署他会自动打开浏览器，让你授权。
 
 ## 使用
 
