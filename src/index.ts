@@ -6,8 +6,24 @@ export interface Env {
 
 export default {
 	async fetch(request: Request<any>, env: Env) {
-
 		const reqBody = await request.json() as any;
+
+		if (!reqBody.prompt) {
+			return new Response(JSON.stringify({
+				error: {
+					message: 'prompt is required',
+					type: 'api_error',
+					param: '',
+					code: 'prompt_missing'
+				}
+			}), {
+				status: 400,
+				headers: {
+					'content-type': 'application/json'
+				}
+			});
+		}
+
 		const prompt = reqBody.prompt;
 		const n = reqBody.n || 1;
 		const size = reqBody.size || '1024x1024';
