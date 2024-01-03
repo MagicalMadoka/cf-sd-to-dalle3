@@ -5,28 +5,28 @@
 这是一个`cloudflare`的ai worker,可以把`cloudflare`提供的`@cf/stabilityai/stable-diffusion-xl-base-1.0`
 模型的输入和输出接口转换为`openai`的`dalle-3`接口的输入和输出。从而可以和目前支持openai格式的服务进行集成。
 
-## 使用方法
+## 部署方法
 
 1. 克隆本项目
 
-	 ```bash
-	 git clone https://github.com/MagicalMadoka/cf-sd-to-dalle3.git
+	  ```bash
+		git clone https://github.com/MagicalMadoka/cf-sd-to-dalle3.git
 
-	 cd cf-sd-to-dalle3
-	 ```
+		cd cf-sd-to-dalle3
+		```
 
 2. 安装依赖
 	 你需要保证你拥有nodejs的环境，然后执行
 
-	 ```bash
-	 npm install
-	 ```
+	  ```bash
+		npm install
+		```
 
 3. 部署到cloudflare
 
-	 ```bash
-	 npm run deploy
-	 ```
+	  ```bash
+		npm run deploy
+		```
 
 	 如果是第一次部署他会自动打开浏览器，让你授权。
 
