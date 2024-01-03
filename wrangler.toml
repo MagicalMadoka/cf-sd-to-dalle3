@@ -1,0 +1,6 @@
+name = "cf-sd-to-dalle3"
+main = "src/index.ts"
+compatibility_date = "2023-12-18"
+
+[ai]
+binding = "AI"
