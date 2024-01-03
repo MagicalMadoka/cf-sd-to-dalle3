@@ -50,8 +50,6 @@ export default {
 
 		const uploadResult = await uploadResponse.json() as any;
 
-		console.log(uploadResult);
-
 		if (!uploadResult.Hash) {
 			throw new Error('Image upload failed');
 		}
